@@ -1,8 +1,29 @@
+/**
+* @fileoverview Aplicacion calificar practicas empresas
+* @author Rafael Lachica Garrido
+* @version 0.0.1
+*/
+
+/**
+* Base de datos de DocumentDB en Azure
+*/
 var DocumentDBClient = require('documentdb').DocumentClient;
 var config = require('./config');
+
+/**
+* Tareas o Empresas
+*/
 var TaskList = require('./routes/tasklist');
+
+/**
+* Calificaciones en empresas
+*/
+
 var TaskDao = require('./models/taskDao');
 
+/**
+* Configuraciones, habilitar Express framework
+*/
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');

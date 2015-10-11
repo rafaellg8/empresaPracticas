@@ -1,12 +1,25 @@
+/**
+* @fileoverview Empresas
+* @author Rafael Lachica Garrido
+* @version 0.0.01
+**/
+
 var DocumentDBClient = require('documentdb').DocumentClient;
 var async = require('async');
 
+/**
+* Constructor
+* @param empresas donde se ha realizado las practicas
+*/
 function TaskList(taskDao) {
   this.taskDao = taskDao;
 }
 
 module.exports = TaskList;
 
+/**
+* Constructor. Funciones asociadas mostrar las empresas (showTasks), añadirlas en (addTask) y eliminarlas (completeTask)
+*/
 TaskList.prototype = {
     showTasks: function (req, res) {
         var self = this;
