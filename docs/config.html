@@ -63,10 +63,37 @@
               
             </div>
             
-            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">var</span> config = {}
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">var</span> config = {}</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-2">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-2">&#182;</a>
+              </div>
+              <p>Configuracion en mi host de Azure por el Puerto 433</p>
 
-config.host = process.env.HOST || <span class="hljs-string">"https://rafaellg8db.documents.azure.com:443/"</span>;
-config.authKey = process.env.AUTH_KEY || <span class="hljs-string">"GeruNMDiTiCz5IJlv+i3vVKiX5T4lXerHCF/UxYIYYewqQHwy6PNXig+V7DwZvDjgUCfVhmmjLuCaSQHG0gglw=="</span>;
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>config.host = process.env.HOST || <span class="hljs-string">"https://rafaellg8db.documents.azure.com:443/"</span>;</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-3">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-3">&#182;</a>
+              </div>
+              <p>Clave de autentificación</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>config.authKey = process.env.AUTH_KEY || <span class="hljs-string">"GeruNMDiTiCz5IJlv+i3vVKiX5T4lXerHCF/UxYIYYewqQHwy6PNXig+V7DwZvDjgUCfVhmmjLuCaSQHG0gglw=="</span>;
 config.databaseId = <span class="hljs-string">"ToDoList"</span>;
 config.collectionId = <span class="hljs-string">"Items"</span>;
 
