@@ -4,7 +4,7 @@ node_js:
   - "0.11"
 before_install:
   - npm install -g mocha
-  - cd src; npm install .
-script: cd src; mocha
+  - npm install docco
+  - npm install coffee-script
 script:
   - npm test
