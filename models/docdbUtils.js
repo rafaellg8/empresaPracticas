@@ -1,5 +1,5 @@
 var DocumentDBClient = require('documentdb').DocumentClient;
-
+assert=require("assert");//aseguramos el include de la base en documentdb
 var DocDBUtils = {
     getOrCreateDatabase: function (client, databaseId, callback) {
         var querySpec = {
@@ -9,7 +9,8 @@ var DocDBUtils = {
                 value: databaseId
             }]
         };
-
+        assert=(DocDBUtils,"Base de datos cargada"); //base de datos cargada
+        console.log("Todo ha funcionado correctamente");
         client.queryDatabases(querySpec).toArray(function (err, results) {
             if (err) {
                 callback(err);
